@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases de Música Online</title>
+  <!-- Fuente e iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2c7fc28a2f.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #f6c90e;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #f6c90e;
+    }
+    .hero {
+      background: url('https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      background: #f6c90e;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background: #e0b90c;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #1e1e2f;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+    form button {
+      background: #1e1e2f;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #f6c90e;
+      color: #1e1e2f;
+    }
+    footer {
+      background: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #f6c90e;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>🎵 Música Online</h1>
+    <nav>
+      <ul>
+        <li><a href="#clases">Clases</a></li>
+        <li><a href="#profesores">Profesores</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Aprende música desde casa</h2>
+    <p>Clases en vivo con profesores certificados</p>
+    <button>¡Comienza hoy!</button>
+  </section>
+
+  <!-- CLASES -->
+  <section id="clases">
+    <h2>Nuestras Clases</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg" alt="Guitarra">
+        <h3>Clases de Guitarra</h3>
+        <p>Aprende acordes, ritmos y técnicas de guitarra desde nivel básico.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/33779/pexels-photo.jpg" alt="Piano">
+        <h3>Clases de Piano</h3>
+        <p>Domina el piano con lecciones prácticas y teóricas paso a paso.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/210138/pexels-photo-210138.jpeg" alt="Canto">
+        <h3>Clases de Canto</h3>
+        <p>Mejora tu técnica vocal y encuentra tu estilo musical.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESORES -->
+  <section id="profesores">
+    <h2>Nuestros Profesores</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profesor 1">
+        <h3>Juan Pérez</h3>
+        <p>Especialista en guitarra clásica y moderna.</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Profesora 2">
+        <h3>María López</h3>
+        <p>Profesora de canto y técnica vocal certificada.</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Profesor 3">
+        <h3>Carlos Ramírez</h3>
+        <p>Experto en piano y composición musical.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="cards">
+      <div class="card">
+        <p>"Las clases de guitarra me cambiaron la vida, aprendí mucho en poco tiempo."</p>
+        <strong>- Ana G.</strong>
+      </div>
+      <div class="card">
+        <p>"Gracias a la plataforma ahora puedo estudiar canto desde mi casa."</p>
+        <strong>- Pedro M.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Escribe tu mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Música Online | 
+      <a href="#">Aviso de Privacidad</a> | 
+      <a href="#">Términos</a>
+    </p>
+  </footer>
+</body>
+</html>
